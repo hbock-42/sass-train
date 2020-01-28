@@ -96,7 +96,7 @@ p {
   margin: 10px 0px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .header > div:last-child {
     -webkit-box-flex: 1;
         -ms-flex: auto;
@@ -152,7 +152,7 @@ p {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   #first-div-img {
     margin-bottom: 20px;
     height: 500px;
@@ -181,6 +181,10 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #first-div > #floating-div > div:first-of-type {
+    width: 550px;
+    margin: auto;
+  }
   #first-div > #floating-div h1 {
     margin-top: 50px;
   }
@@ -189,7 +193,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   #first-div-img {
     margin-bottom: 150px;
     margin-left: 400px;
@@ -304,7 +308,7 @@ p {
   margin-top: 140px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   #how-it-works > div {
     width: 49%;
   }
