@@ -310,18 +310,38 @@ p {
   }
   #how-it-works > div:nth-child(2) {
     float: right;
+    text-align: -webkit-left;
+  }
+  #how-it-works > div:nth-child(2) > div {
+    text-align: -webkit-match-parent;
   }
   #how-it-works > div:nth-child(3) {
     float: left;
+    text-align: -webkit-right;
+  }
+  #how-it-works > div:nth-child(3) > div {
+    text-align: -webkit-match-parent;
   }
   #how-it-works > div:nth-child(4) {
     float: right;
+    text-align: -webkit-left;
+  }
+  #how-it-works > div:nth-child(4) > div {
+    text-align: -webkit-match-parent;
   }
   #how-it-works > div:nth-child(5) {
     float: left;
+    text-align: -webkit-right;
+  }
+  #how-it-works > div:nth-child(5) > div {
+    text-align: -webkit-match-parent;
   }
   #how-it-works > div:nth-child(6) {
     float: right;
+    text-align: -webkit-left;
+  }
+  #how-it-works > div:nth-child(6) > div {
+    text-align: -webkit-match-parent;
   }
 }
 /*# sourceMappingURL=place-pull.css.map */
