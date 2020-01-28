@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  background-color: orange;
+}
+
+header {
+  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  line-height: 200px;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+}
+
+table {
+  margin: 10px;
+  border-spacing: 0;
+  background-color: orange;
+}
+
+tr:first-of-type th:first-of-type {
+  border-top-left-radius: 7px;
+  border-bottom-width: 1px !important;
+  border-right-width: 1px !important;
+  border-width: 2px;
+}
+
+tr:first-of-type th:last-of-type {
+  border-top-right-radius: 7px;
+  border-bottom-width: 1px !important;
+  border-left-width: 1px !important;
+  border-width: 2px;
+}
+
+tr:last-of-type th:first-of-type {
+  border-bottom-left-radius: 7px;
+  border-top-width: 1px !important;
+  border-right-width: 1px !important;
+  border-width: 2px;
+}
+
+tr:last-of-type th:last-of-type {
+  border-bottom-right-radius: 7px;
+  border-top-width: 1px !important;
+  border-left-width: 1px !important;
+  border-width: 2px;
+}
+
+tr:first-of-type th {
+  border-top-width: 2px !important;
+}
+
+tr:last-of-type th {
+  border-bottom-width: 2px !important;
+}
+
+tr th:last-of-type {
+  border-right-width: 2px !important;
+}
+
+tr th:first-of-type {
+  border-left-width: 2px !important;
+}
+
+th {
+  border: solid;
+  border-width: 1px;
+  border-color: blue;
+  padding: 6px 20px;
+}
+/*# sourceMappingURL=s1.css.map */

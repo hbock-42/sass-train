@@ -1,0 +1,25 @@
+@import "./variables";
+
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  > div {
+    padding: 0px 30px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $fake-black;
+}
+
+p {
+  color: $paragraph-color;
+}
+
+.blue {
+  color: $blue;
+}

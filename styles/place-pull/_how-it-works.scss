@@ -1,0 +1,80 @@
+@import "./variables";
+@import "./mixins";
+
+#how-it-works {
+  text-align: -webkit-center;
+
+  div > div {
+    text-align: center;
+  }
+
+  div > div:first-of-type {
+    > h3,
+    p {
+      text-align: center;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .bullet-point {
+    & > * {
+      display: inline;
+    }
+
+    & > img {
+      vertical-align: middle;
+      height: $icon-height;
+      width: auto;
+      margin-right: 10px;
+      @include grey-filter;
+    }
+
+    & > p {
+      height: $icon-height;
+      line-height: $icon-height;
+    //   white-space: nowrap;
+    }
+  }
+
+  .steps {
+    max-width: 550px;
+    & > * {
+      text-align: start;
+    }
+
+    & > div:first-of-type > img {
+      @include blue-iconize;
+    }
+
+    .bullet-point:not(:first-of-type) {
+      border-top: solid;
+      border-width: 1px;
+      border-color: $border-color;
+      padding: 20px 0;
+    }
+
+    > div:last-of-type {
+      margin-top: 140px;
+    }
+  }
+
+  @media #{$medium-up} {
+    & > div {
+      width: 49%;
+    }
+
+    @for $i from 2 to 7 {
+      $floatSide: left;
+      @if ($i % 2 == 0) {
+        $floatSide: right;
+      }
+
+      & > div:nth-child(#{$i}) {
+        float: $floatSide;
+      }
+    }
+  }
+}

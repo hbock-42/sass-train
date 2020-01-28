@@ -1,0 +1,77 @@
+$headerHeight: 200px;
+$borderRadius: 7px;
+$borderWidth: 2px;
+$borderColor: blue;
+$tableBackgroundColor: orange;
+
+body {
+  margin: 0;
+  background-color: $tableBackgroundColor;
+}
+
+header {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  height: $headerHeight;
+  line-height: $headerHeight;
+
+  h1 {
+    margin: 0;
+    color: white;
+  }
+}
+
+table {
+    margin: 10px;
+    border-spacing: 0;
+    background-color: $tableBackgroundColor;
+}
+
+tr:first-of-type th:first-of-type {
+  border-top-left-radius: $borderRadius;
+  border-bottom-width: $borderWidth / 2 !important;
+  border-right-width: $borderWidth / 2 !important;
+  border-width: $borderWidth;
+}
+tr:first-of-type th:last-of-type {
+  border-top-right-radius: $borderRadius;
+  border-bottom-width: $borderWidth / 2 !important;
+  border-left-width: $borderWidth / 2 !important;
+  border-width: $borderWidth;
+}
+tr:last-of-type th:first-of-type {
+  border-bottom-left-radius: $borderRadius;
+  border-top-width: $borderWidth / 2 !important;
+  border-right-width: $borderWidth / 2 !important;
+  border-width: $borderWidth;
+}
+tr:last-of-type th:last-of-type {
+  border-bottom-right-radius: $borderRadius;
+  border-top-width: $borderWidth / 2 !important;
+  border-left-width: $borderWidth / 2 !important;
+  border-width: $borderWidth;
+}
+
+tr:first-of-type th {
+    border-top-width: $borderWidth !important;
+}
+
+tr:last-of-type th {
+    border-bottom-width: $borderWidth !important;
+}
+
+tr th:last-of-type {
+    border-right-width: $borderWidth !important;
+}
+
+tr th:first-of-type {
+    border-left-width: $borderWidth !important;
+}
+
+th {
+  border: solid;
+  border-width: $borderWidth / 2;
+  border-color: $borderColor;
+  padding: 6px 20px;
+}

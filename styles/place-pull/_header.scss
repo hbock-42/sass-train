@@ -1,0 +1,50 @@
+@import "./align-helpers";
+@import "./variables";
+@import "./responsive";
+
+.header {
+  display: flex;
+
+  > div {
+    @include verticalCenter();
+    padding: 0 10px;
+
+    ul {
+      list-style-type: none;
+      overflow: hidden;
+      padding: 0;
+      li {
+        padding: 8px 15px;
+        float: left;
+        &:hover {
+          background-color: $list-element-hover-background-color;
+        }
+      }
+    }
+  }
+
+  > div:first-child {
+    @include horizontalLeft();
+  }
+
+  > div:not(:first-child):not(:last-child) {
+    @include horizontalCenter();
+    flex-grow: 1;
+  }
+  > div:last-child {
+    @include horizontalRight();
+    margin: 10px 0px;
+  }
+}
+
+@media #{$medium-down} {
+  .header {
+    > div:last-child {
+      flex: auto;
+    }
+  }
+
+  .menu-bar {
+    display: none !important;
+  }
+}

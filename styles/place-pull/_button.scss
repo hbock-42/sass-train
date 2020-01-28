@@ -1,0 +1,12 @@
+@import './variables';
+
+.button {
+    width: fit-content;
+    background-color: $button-background;
+    padding: 12px 24px;
+    border-radius: 2000px;
+    color: white;
+    &:hover {
+        background-color: $button-hover-background;
+    }
+}
