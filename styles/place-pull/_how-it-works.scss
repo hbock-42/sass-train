@@ -4,14 +4,25 @@
 #how-it-works {
   text-align: -webkit-center;
 
+  > div:nth-of-type(n + 2) {
+    padding: 0 5%;
+  }
+
   div > div {
     text-align: center;
+  }
+
+  .title-div {
+    margin: 60px 0;
+    p {
+      text-align: center !important;
+    }
   }
 
   div > div:first-of-type {
     > h3,
     p {
-      text-align: center;
+      text-align: left;
     }
   }
 
@@ -35,7 +46,7 @@
     & > p {
       height: $icon-height;
       line-height: $icon-height;
-    //   white-space: nowrap;
+      //   white-space: nowrap;
     }
   }
 
@@ -63,22 +74,25 @@
 
   @media #{$medium-up} {
     & > div {
-      width: 49%;
+      width: 44%;
     }
 
     @for $i from 2 to 7 {
-      $floatSide: left;
-      $textAlign: -webkit-right;
-      @if ($i % 2 == 0) {
-        $floatSide: right;
-        $textAlign: -webkit-left;
-    }
-
       & > div:nth-child(#{$i}) {
+        $floatSide: left;
+        $textAlign: -webkit-right;
+        @if ($i % 2 == 0) {
+          $floatSide: right;
+          $textAlign: -webkit-left;
+          padding-right: 5%;
+        } @else {
+          padding-left: 5%;
+        }
+
         float: $floatSide;
         text-align: $textAlign;
         & > div {
-            text-align: -webkit-match-parent;
+          text-align: -webkit-match-parent;
         }
       }
     }

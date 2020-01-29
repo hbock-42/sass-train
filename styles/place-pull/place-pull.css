@@ -118,10 +118,14 @@ p {
   margin-bottom: 10px;
 }
 
+#first-div {
+  padding-bottom: 40px;
+}
+
 @media only screen and (max-width: 800px) {
   #image-div {
-    width: 100%;
     overflow: hidden;
+    padding: 0 5%;
   }
   #image-div > img {
     width: 100%;
@@ -198,13 +202,25 @@ p {
   text-align: -webkit-center;
 }
 
+#how-it-works > div:nth-of-type(n + 2) {
+  padding: 0 5%;
+}
+
 #how-it-works div > div {
   text-align: center;
 }
 
+#how-it-works .title-div {
+  margin: 60px 0;
+}
+
+#how-it-works .title-div p {
+  text-align: center !important;
+}
+
 #how-it-works div > div:first-of-type > h3,
 #how-it-works div > div:first-of-type p {
-  text-align: center;
+  text-align: left;
 }
 
 #how-it-works img {
@@ -259,9 +275,10 @@ p {
 
 @media only screen and (min-width: 800px) {
   #how-it-works > div {
-    width: 49%;
+    width: 44%;
   }
   #how-it-works > div:nth-child(2) {
+    padding-right: 5%;
     float: right;
     text-align: -webkit-left;
   }
@@ -269,6 +286,7 @@ p {
     text-align: -webkit-match-parent;
   }
   #how-it-works > div:nth-child(3) {
+    padding-left: 5%;
     float: left;
     text-align: -webkit-right;
   }
@@ -276,6 +294,7 @@ p {
     text-align: -webkit-match-parent;
   }
   #how-it-works > div:nth-child(4) {
+    padding-right: 5%;
     float: right;
     text-align: -webkit-left;
   }
@@ -283,6 +302,7 @@ p {
     text-align: -webkit-match-parent;
   }
   #how-it-works > div:nth-child(5) {
+    padding-left: 5%;
     float: left;
     text-align: -webkit-right;
   }
@@ -290,6 +310,7 @@ p {
     text-align: -webkit-match-parent;
   }
   #how-it-works > div:nth-child(6) {
+    padding-right: 5%;
     float: right;
     text-align: -webkit-left;
   }

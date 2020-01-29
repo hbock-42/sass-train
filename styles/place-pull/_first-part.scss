@@ -35,21 +35,18 @@ $totalDivHeight: 550px;
   }
 }
 
-#informations {
-  // background-color: pink;
-}
-
-#image-div {
-  // background-color: green;
+#first-div {
+  padding-bottom: 40px;
 }
 
 @media #{$medium-down} {
   #image-div {
-    width: 100%;
+    // width: 100%;
     overflow: hidden;
     > img {
       width: 100%;
     }
+    padding: 0 5%;
   }
 
   #first-div {
