@@ -2,19 +2,26 @@
 @import "./variables";
 @import "./responsive";
 
+$header-heigh: 60px;
+
 .header {
-  display: flex;
+  width: 100vw;
+  height: $header-heigh;
+  line-height: $header-heigh;
+  text-align: center;
 
   > div {
-    @include verticalCenter();
-    padding: 0 10px;
+    display: inline-block;
+    height: 100%;
 
     ul {
       list-style-type: none;
       overflow: hidden;
       padding: 0;
+      height: 100%;
+      margin: 0;
       li {
-        padding: 8px 15px;
+        padding: 0 15px;
         float: left;
         &:hover {
           background-color: $list-element-hover-background-color;
@@ -24,26 +31,17 @@
   }
 
   > div:first-child {
-    @include horizontalLeft();
+    float: left;
+    margin-left: 20px;
   }
 
-  > div:not(:first-child):not(:last-child) {
-    @include horizontalCenter();
-    flex-grow: 1;
-  }
   > div:last-child {
-    @include horizontalRight();
-    margin: 10px 0px;
+    float: right;
+    margin-right: 20px;
   }
 }
 
 @media #{$medium-down} {
-  .header {
-    > div:last-child {
-      flex: auto;
-    }
-  }
-
   .menu-bar {
     display: none !important;
   }
