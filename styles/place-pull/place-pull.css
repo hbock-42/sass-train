@@ -238,10 +238,6 @@ p {
   text-align: -webkit-center;
 }
 
-#how-it-works > div:nth-of-type(n + 2) {
-  padding: 0 5%;
-}
-
 #how-it-works div > div {
   text-align: center;
 }
@@ -307,6 +303,12 @@ p {
 
 #how-it-works .steps > div:last-of-type {
   margin-top: 140px;
+}
+
+@media only screen and (max-width: 800px) {
+  #how-it-works > div:nth-of-type(n + 2) {
+    padding: 0 5%;
+  }
 }
 
 @media only screen and (min-width: 800px) {

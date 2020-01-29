@@ -4,10 +4,6 @@
 #how-it-works {
   text-align: -webkit-center;
 
-  > div:nth-of-type(n + 2) {
-    padding: 0 5%;
-  }
-
   div > div {
     text-align: center;
   }
@@ -69,6 +65,12 @@
 
     > div:last-of-type {
       margin-top: 140px;
+    }
+  }
+
+  @media #{$medium-down} {
+    > div:nth-of-type(n + 2) {
+      padding: 0 5%;
     }
   }
 
