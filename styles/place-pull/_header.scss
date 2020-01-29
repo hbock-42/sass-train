@@ -5,10 +5,11 @@
 $header-heigh: 60px;
 
 .header {
-  width: 100%;
+  width: 90%;
   height: $header-heigh;
   line-height: $header-heigh;
   text-align: center;
+  padding: 0 5%;
 
   > div {
     display: inline-block;
@@ -32,12 +33,10 @@ $header-heigh: 60px;
 
   > div:first-child {
     float: left;
-    margin-left: 20px;
   }
 
   > div:last-child {
     float: right;
-    margin-right: 20px;
   }
 }
 

@@ -32,10 +32,11 @@ p {
 }
 
 .header {
-  width: 100%;
+  width: 90%;
   height: 60px;
   line-height: 60px;
   text-align: center;
+  padding: 0 5%;
 }
 
 .header > div {
@@ -62,12 +63,10 @@ p {
 
 .header > div:first-child {
   float: left;
-  margin-left: 20px;
 }
 
 .header > div:last-child {
   float: right;
-  margin-right: 20px;
 }
 
 @media only screen and (max-width: 800px) {
