@@ -238,24 +238,11 @@ p {
   text-align: -webkit-center;
 }
 
-#how-it-works .card {
-  background-color: #f3f6fe;
-  border-radius: 14px;
-  overflow: hidden;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 25px 45px;
-}
-
-#how-it-works .card * {
-  background-color: #f3f6fe;
-}
-
 #how-it-works #how-it-works-div {
   height: 320px;
   width: 100%;
   float: left;
+  margin-bottom: 70px;
 }
 
 #how-it-works #how-it-works-div .row {
@@ -328,7 +315,7 @@ p {
   max-width: 100%;
 }
 
-#how-it-works .bullet-point > * {
+#how-it-works .bullet-point > *:not(.icon) {
   display: inline;
 }
 
@@ -356,12 +343,11 @@ p {
 }
 
 #how-it-works .steps > div:first-of-type > img {
-  -webkit-filter: invert(43%) sepia(77%) saturate(3078%) hue-rotate(200deg) brightness(95%) contrast(86%);
-          filter: invert(43%) sepia(77%) saturate(3078%) hue-rotate(200deg) brightness(95%) contrast(86%);
+  -webkit-filter: invert(15%) sepia(98%) saturate(6767%) hue-rotate(218deg) brightness(103%) contrast(109%);
+          filter: invert(15%) sepia(98%) saturate(6767%) hue-rotate(218deg) brightness(103%) contrast(109%);
   background-color: transparent;
-  background-color: rgba(49, 124, 226, 0.3);
+  background-color: transparent;
   padding: 13px;
-  border-radius: 16px;
   height: 22px;
 }
 
@@ -435,5 +421,178 @@ p {
   #how-it-works > div:nth-child(6) > div {
     text-align: -webkit-match-parent;
   }
+}
+
+#proven-results {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+#proven-results .title-div {
+  margin-bottom: 55px;
+}
+
+#proven-results .title-div h1 {
+  margin: 30px 0 5px;
+}
+
+#proven-results .title-div p {
+  text-align: center !important;
+  margin: 0;
+}
+
+#proven-results .card {
+  width: 90%;
+}
+
+#proven-results .card > div {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#proven-results .shadow-card {
+  width: 14%;
+  padding: 30px;
+  display: inline-block;
+  margin: 0 1.5%;
+}
+
+#proven-results .shadow-card h4 {
+  margin: 24px 0 6px;
+}
+
+#proven-results .shadow-card p {
+  margin: 0;
+}
+
+#proven-results .icon {
+  border-radius: 12px;
+}
+
+.card {
+  display: inline-block;
+  background-color: #f3f6fe;
+  border-radius: 14px;
+  overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 25px 45px;
+}
+
+.card * {
+  background-color: #f3f6fe;
+}
+
+.shadow-card {
+  text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 40px 10px 20px;
+  border-radius: 7px;
+  border-width: 1px !important;
+  border-color: rgba(190, 207, 219, 0.4) !important;
+  border: solid;
+  -webkit-box-shadow: 22px 10px 15px rgba(190, 207, 219, 0.4);
+          box-shadow: 22px 10px 15px rgba(190, 207, 219, 0.4);
+  background-color: white;
+}
+
+.shadow-card * {
+  background-color: white;
+}
+
+div.icon {
+  vertical-align: middle;
+}
+
+div.icon.blue {
+  background-color: rgba(49, 124, 226, 0.3);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  border-radius: 16px;
+}
+
+div.icon.blue > img {
+  -webkit-filter: invert(15%) sepia(98%) saturate(6767%) hue-rotate(218deg) brightness(103%) contrast(109%);
+          filter: invert(15%) sepia(98%) saturate(6767%) hue-rotate(218deg) brightness(103%) contrast(109%);
+  background-color: transparent;
+  background-color: transparent;
+  padding: 13px;
+  height: 22px;
+}
+
+div.icon.pink {
+  background-color: rgba(255, 0, 142, 0.3);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  border-radius: 16px;
+}
+
+div.icon.pink > img {
+  -webkit-filter: invert(23%) sepia(80%) saturate(7497%) hue-rotate(316deg) brightness(93%) contrast(124%);
+          filter: invert(23%) sepia(80%) saturate(7497%) hue-rotate(316deg) brightness(93%) contrast(124%);
+  background-color: transparent;
+  background-color: transparent;
+  padding: 13px;
+  height: 22px;
+}
+
+div.icon.green {
+  background-color: rgba(0, 189, 121, 0.3);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  border-radius: 16px;
+}
+
+div.icon.green > img {
+  -webkit-filter: invert(55%) sepia(98%) saturate(2457%) hue-rotate(122deg) brightness(94%) contrast(101%);
+          filter: invert(55%) sepia(98%) saturate(2457%) hue-rotate(122deg) brightness(94%) contrast(101%);
+  background-color: transparent;
+  background-color: transparent;
+  padding: 13px;
+  height: 22px;
+}
+
+div.icon.yellow {
+  background-color: rgba(255, 230, 0, 0.3);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  border-radius: 16px;
+}
+
+div.icon.yellow > img {
+  -webkit-filter: invert(68%) sepia(40%) saturate(5096%) hue-rotate(0deg) brightness(103%) contrast(105%);
+          filter: invert(68%) sepia(40%) saturate(5096%) hue-rotate(0deg) brightness(103%) contrast(105%);
+  background-color: transparent;
+  background-color: transparent;
+  padding: 13px;
+  height: 22px;
 }
 /*# sourceMappingURL=place-pull.css.map */

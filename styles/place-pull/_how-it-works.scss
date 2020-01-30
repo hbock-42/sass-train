@@ -4,22 +4,11 @@
 #how-it-works {
   text-align: -webkit-center;
 
-  $card-vertical-padding: 25px;
-  .card {
-    background-color: $whie-blueish;
-    border-radius: 14px;
-    overflow: hidden;
-    width: fit-content;
-    padding: $card-vertical-padding 45px;
-    * {
-      background-color: $whie-blueish;
-    }
-  }
-
   #how-it-works-div {
     height: 320px;
     width: 100%;
     float: left;
+    margin-bottom: 70px;
     .row {
       padding: 10px 40px 10px 20px;
       margin: 2px 0;
@@ -87,7 +76,7 @@
   }
 
   .bullet-point {
-    & > * {
+    & > *:not(.icon) {
       display: inline;
     }
 
@@ -112,7 +101,7 @@
     }
 
     & > div:first-of-type > img {
-      @include blue-iconize;
+      @include iconize;
     }
 
     .bullet-point:not(:first-of-type) {

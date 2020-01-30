@@ -1,7 +1,22 @@
 @import "./variables";
 
 @mixin blue-filter() {
-  filter: invert(43%) sepia(77%) saturate(3078%) hue-rotate(200deg) brightness(95%) contrast(86%);
+  filter: invert(15%) sepia(98%) saturate(6767%) hue-rotate(218deg) brightness(103%) contrast(109%);
+  background-color: transparent;
+}
+
+@mixin green-filter() {
+  filter: invert(55%) sepia(98%) saturate(2457%) hue-rotate(122deg) brightness(94%) contrast(101%);
+  background-color: transparent;
+}
+
+@mixin pink-filter() {
+  filter: invert(23%) sepia(80%) saturate(7497%) hue-rotate(316deg) brightness(93%) contrast(124%);
+  background-color: transparent;
+}
+
+@mixin yellow-filter() {
+  filter: invert(68%) sepia(40%) saturate(5096%) hue-rotate(0deg) brightness(103%) contrast(105%);
   background-color: transparent;
 }
 
@@ -10,10 +25,41 @@
   background-color: transparent;
 }
 
-@mixin blue-iconize() {
-  @include blue-filter();
-  background-color: rgba($color: $blue, $alpha: 0.3);
+// use on background
+@mixin iconize-background($color: blue, $border-radius: 16px) {
+  @if ($color == blue) {
+    background-color: rgba($color: $blue, $alpha: 0.3);
+  } @else if ($color == green) {
+    background-color: rgba($color: $green, $alpha: 0.3);
+  } @else if ($color == pink) {
+    background-color: rgba($color: $pink, $alpha: 0.3);
+  } @else if ($color == yellow) {
+    background-color: rgba($color: $yellow, $alpha: 0.3);
+  } @else {
+    @warn "The icon color you requested does not exist ! Using default filter color";
+    background-color: $blue;
+  }
+  width: fit-content;
+  height: fit-content;
+  display: inline-grid;
+  border-radius: $border-radius;
+}
+
+@mixin iconize($color: blue) {
+  @if ($color == blue) {
+    @include blue-filter();
+  } @else if ($color == green) {
+    @include green-filter();
+  } @else if ($color == pink) {
+    @include pink-filter();
+  } @else if ($color == yellow) {
+    @include yellow-filter();
+  } @else {
+    @warn "The icon color you requested does not exist ! Using default filter color";
+    @include blue-filter();
+  }
+
+  background-color: transparent;
   padding: $icon-padding;
-  border-radius: 16px;
   height: $icon-height - $icon-padding;
 }
