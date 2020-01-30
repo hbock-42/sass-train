@@ -455,7 +455,7 @@ p {
   width: 14%;
   padding: 30px;
   display: inline-block;
-  margin: 0 1.5%;
+  margin: 75px 1.5% 0;
 }
 
 #proven-results .shadow-card h4 {
@@ -464,6 +464,11 @@ p {
 
 #proven-results .shadow-card p {
   margin: 0;
+}
+
+#proven-results .shadow-card.tr-top {
+  -webkit-transform: translate(0, -75px);
+          transform: translate(0, -75px);
 }
 
 #proven-results .icon {
