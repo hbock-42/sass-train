@@ -17,9 +17,22 @@
   }
 
   #how-it-works-div {
-    height: 340px;
+    height: 320px;
     width: 100%;
     float: left;
+    .row {
+      padding: 10px 40px 10px 20px;
+      margin: 2px 0;
+      border-radius: 7px;
+      border-width: 1px !important;
+      border-color: rgba($color: $border-color, $alpha: 0.4) !important;
+      border: solid;
+      box-shadow: 3px 3px 5px rgba($color: $border-color, $alpha: 0.4);
+      background-color: white;
+      p {
+        background-color: white;
+      }
+    }
   }
 
   .inline-children {
@@ -38,8 +51,10 @@
         float: right;
       }
     }
+
     > div:last-of-type {
       float: right;
+      margin-left: 50px;
       > div {
         float: left;
         div {
@@ -118,6 +133,13 @@
     }
     > div:nth-of-type(n + 2) {
       padding: 0 5%;
+    }
+
+    .inline-children {
+      height: auto;
+      > div:last-of-type {
+        display: none;
+      }
     }
   }
 

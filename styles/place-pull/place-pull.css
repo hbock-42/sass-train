@@ -12,7 +12,7 @@ h4 {
 }
 
 p {
-  color: #8497a8;
+  color: #324f78;
 }
 
 .blue {
@@ -253,9 +253,25 @@ p {
 }
 
 #how-it-works #how-it-works-div {
-  height: 340px;
+  height: 320px;
   width: 100%;
   float: left;
+}
+
+#how-it-works #how-it-works-div .row {
+  padding: 10px 40px 10px 20px;
+  margin: 2px 0;
+  border-radius: 7px;
+  border-width: 1px !important;
+  border-color: rgba(190, 207, 219, 0.4) !important;
+  border: solid;
+  -webkit-box-shadow: 3px 3px 5px rgba(190, 207, 219, 0.4);
+          box-shadow: 3px 3px 5px rgba(190, 207, 219, 0.4);
+  background-color: white;
+}
+
+#how-it-works #how-it-works-div .row p {
+  background-color: white;
 }
 
 #how-it-works .inline-children {
@@ -280,6 +296,7 @@ p {
 
 #how-it-works .inline-children > div:last-of-type {
   float: right;
+  margin-left: 50px;
 }
 
 #how-it-works .inline-children > div:last-of-type > div {
@@ -320,8 +337,8 @@ p {
   height: 35px;
   width: auto;
   margin-right: 10px;
-  -webkit-filter: invert(25%) sepia(1%) saturate(2275%) hue-rotate(5deg) brightness(96%) contrast(88%);
-          filter: invert(25%) sepia(1%) saturate(2275%) hue-rotate(5deg) brightness(96%) contrast(88%);
+  -webkit-filter: invert(29%) sepia(13%) saturate(2076%) hue-rotate(176deg) brightness(93%) contrast(90%);
+          filter: invert(29%) sepia(13%) saturate(2076%) hue-rotate(176deg) brightness(93%) contrast(90%);
   background-color: transparent;
 }
 
@@ -365,6 +382,12 @@ p {
   }
   #how-it-works > div:nth-of-type(n + 2) {
     padding: 0 5%;
+  }
+  #how-it-works .inline-children {
+    height: auto;
+  }
+  #how-it-works .inline-children > div:last-of-type {
+    display: none;
   }
 }
 
