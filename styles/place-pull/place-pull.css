@@ -423,6 +423,12 @@ p {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  #how-it-works .inline-children.card {
+    height: 100%;
+  }
+}
+
 #proven-results {
   width: 100%;
   float: left;
@@ -476,17 +482,29 @@ p {
 }
 
 @media only screen and (max-width: 1180px) {
+  #proven-results .card {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
   #proven-results .large-up {
     display: none;
   }
   #proven-results .large-down .shadow-card {
-    width: 32%;
+    width: 36%;
     padding: 30px;
     display: inline-block;
     margin: 1%;
   }
+  #proven-results .large-down .shadow-card > div {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  #proven-results .large-down .shadow-card > div:first-of-type {
+    margin-right: 10px;
+  }
   #proven-results .large-down .shadow-card h4 {
-    margin: 24px 0 6px;
+    margin: 0 0 10px;
   }
   #proven-results .large-down .shadow-card p {
     margin: 0;
@@ -496,6 +514,13 @@ p {
 @media only screen and (min-width: 1180px) {
   #proven-results .large-down {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #proven-results .large-down .shadow-card {
+    padding: 4%;
+    width: 85%;
   }
 }
 

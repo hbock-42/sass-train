@@ -157,4 +157,10 @@
       }
     }
   }
+
+  @media #{$medium-down} {
+    .inline-children.card {
+      height: 100%;
+    }
+  }
 }
