@@ -4,6 +4,51 @@
 #how-it-works {
   text-align: -webkit-center;
 
+  $card-vertical-padding: 25px;
+  .card {
+    background-color: $whie-blueish;
+    border-radius: 14px;
+    overflow: hidden;
+    width: fit-content;
+    padding: $card-vertical-padding 45px;
+    * {
+      background-color: $whie-blueish;
+    }
+  }
+
+  #how-it-works-div {
+    height: 340px;
+    width: 100%;
+    float: left;
+  }
+
+  .inline-children {
+    height: calc(100% - #{$card-vertical-padding * 2});
+    > * {
+      height: -webkit-fill-available;
+    }
+
+    > div:first-of-type {
+      height: 100%;
+      float: left;
+      > img {
+        height: auto;
+        width: auto;
+        max-height: 100%;
+        float: right;
+      }
+    }
+    > div:last-of-type {
+      float: right;
+      > div {
+        float: left;
+        div {
+          text-align: left;
+        }
+      }
+    }
+  }
+
   div > div {
     text-align: center;
   }
@@ -42,7 +87,6 @@
     & > p {
       height: $icon-height;
       line-height: $icon-height;
-      //   white-space: nowrap;
     }
   }
 
@@ -69,13 +113,16 @@
   }
 
   @media #{$medium-down} {
+    #how-it-works-div {
+      width: 90%;
+    }
     > div:nth-of-type(n + 2) {
       padding: 0 5%;
     }
   }
 
   @media #{$medium-up} {
-    & > div {
+    & > div:not(:last-child) {
       width: 44%;
     }
 

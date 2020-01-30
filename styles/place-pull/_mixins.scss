@@ -2,10 +2,12 @@
 
 @mixin blue-filter() {
   filter: invert(43%) sepia(77%) saturate(3078%) hue-rotate(200deg) brightness(95%) contrast(86%);
+  background-color: transparent;
 }
 
 @mixin grey-filter() {
   filter: invert(25%) sepia(1%) saturate(2275%) hue-rotate(5deg) brightness(96%) contrast(88%);
+  background-color: transparent;
 }
 
 @mixin blue-iconize() {
