@@ -154,3 +154,16 @@ $totalDivHeight: 550px;
     display: none;
   }
 }
+
+// animations
+
+.show-translation {
+  transition: transform 0.7s ease-in-out, opacity 1.2s ease-in-out;
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
+
+.hidden-translation {
+  opacity: 0;
+  transform: translate(0, 100px);
+}

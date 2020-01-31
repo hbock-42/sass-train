@@ -1,11 +1,6 @@
 @import "./variables";
 @import "./mixins";
 
-.show {
-  transition: opacity 1.4s ease-in-out;
-  opacity: 1 !important;
-}
-
 #how-it-works {
   text-align: -webkit-center;
 
@@ -101,7 +96,6 @@
   }
 
   .steps {
-    opacity: 0;
 
     max-width: 550px;
     & > * {
@@ -171,4 +165,15 @@
       height: 100%;
     }
   }
+}
+
+// animations
+
+#how-it-works > * {
+  opacity: 0;
+}
+
+.show {
+  transition: opacity 1.4s ease-in-out;
+  opacity: 1 !important;
 }

@@ -234,10 +234,20 @@ p {
   }
 }
 
-.show {
-  -webkit-transition: opacity 1.4s ease-in-out;
-  transition: opacity 1.4s ease-in-out;
+.show-translation {
+  -webkit-transition: opacity 1.2s ease-in-out, -webkit-transform 0.7s ease-in-out;
+  transition: opacity 1.2s ease-in-out, -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, opacity 1.2s ease-in-out;
+  transition: transform 0.7s ease-in-out, opacity 1.2s ease-in-out, -webkit-transform 0.7s ease-in-out;
   opacity: 1 !important;
+  -webkit-transform: translate(0, 0) !important;
+          transform: translate(0, 0) !important;
+}
+
+.hidden-translation {
+  opacity: 0;
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
 }
 
 #how-it-works {
@@ -342,7 +352,6 @@ p {
 }
 
 #how-it-works .steps {
-  opacity: 0;
   max-width: 550px;
 }
 
@@ -435,6 +444,16 @@ p {
   #how-it-works .inline-children.card {
     height: 100%;
   }
+}
+
+#how-it-works > * {
+  opacity: 0;
+}
+
+.show {
+  -webkit-transition: opacity 1.4s ease-in-out;
+  transition: opacity 1.4s ease-in-out;
+  opacity: 1 !important;
 }
 
 #proven-results {
