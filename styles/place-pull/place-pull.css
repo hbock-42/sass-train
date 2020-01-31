@@ -451,15 +451,17 @@ p {
 }
 
 .show {
-  -webkit-transition: opacity 1.4s ease-in-out;
-  transition: opacity 1.4s ease-in-out;
+  -webkit-transition: opacity .8s ease-in-out;
+  transition: opacity .8s ease-in-out;
   opacity: 1 !important;
 }
 
 #proven-results {
+  opacity: 0;
   width: 100%;
   float: left;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 #proven-results .title-div {
