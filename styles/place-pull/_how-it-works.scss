@@ -1,6 +1,11 @@
 @import "./variables";
 @import "./mixins";
 
+.show {
+  transition: opacity 1.4s ease-in-out;
+  opacity: 1 !important;
+}
+
 #how-it-works {
   text-align: -webkit-center;
 
@@ -8,6 +13,7 @@
     height: 320px;
     width: 100%;
     float: left;
+    margin-top: 70px;
     margin-bottom: 70px;
     .row {
       padding: 10px 40px 10px 20px;
@@ -95,6 +101,8 @@
   }
 
   .steps {
+    opacity: 0;
+
     max-width: 550px;
     & > * {
       text-align: start;

@@ -234,6 +234,12 @@ p {
   }
 }
 
+.show {
+  -webkit-transition: opacity 1.4s ease-in-out;
+  transition: opacity 1.4s ease-in-out;
+  opacity: 1 !important;
+}
+
 #how-it-works {
   text-align: -webkit-center;
 }
@@ -242,6 +248,7 @@ p {
   height: 320px;
   width: 100%;
   float: left;
+  margin-top: 70px;
   margin-bottom: 70px;
 }
 
@@ -335,6 +342,7 @@ p {
 }
 
 #how-it-works .steps {
+  opacity: 0;
   max-width: 550px;
 }
 
