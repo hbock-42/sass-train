@@ -1,0 +1,33 @@
+@import "./mixins";
+
+div.icon {
+  vertical-align: middle;
+}
+
+div.icon.blue {
+  @include iconize-background(blue);
+  > img {
+    @include iconize(blue);
+  }
+}
+
+div.icon.pink {
+  @include iconize-background(pink);
+  > img {
+    @include iconize(pink);
+  }
+}
+
+div.icon.green {
+  @include iconize-background(green);
+  > img {
+    @include iconize(green);
+  }
+}
+
+div.icon.yellow {
+  @include iconize-background(yellow);
+  > img {
+    @include iconize(yellow);
+  }
+}

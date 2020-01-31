@@ -1,0 +1,27 @@
+@import "./variables";
+
+$card-color: $whie-blueish !default;
+.card {
+  display: inline-block;
+  background-color: $card-color;
+  border-radius: 14px;
+  overflow: hidden;
+  width: fit-content;
+  padding: $card-vertical-padding 45px;
+  * {
+    background-color: $card-color;
+  }
+}
+
+.shadow-card {
+  text-align: left;
+  width: fit-content;
+  padding: 10px 40px 10px 20px;
+  border-radius: 7px;
+  border-width: 1px !important;
+  border-color: rgba($color: $border-color, $alpha: 0.4) !important;
+  border: solid;
+  box-shadow: 22px 10px 15px rgba($color: $border-color, $alpha: 0.4);
+  background-color: white;
+  * {background-color: white;}
+}
